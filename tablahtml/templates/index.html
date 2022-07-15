@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Tabla with Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla</h1>
+                <table class="table table-hover">
+                    <tr class="thead-light">
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Nombre completo</th>
+                    </tr>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user['nombre'] }}</td>
+                        <td>{{ user['apellido'] }}</td>
+                        <td>{{ user['nombre']}} {{ user['apellido'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+    </div>
+
+</body>
+</html>
