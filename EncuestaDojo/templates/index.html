@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Dojo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <br>
+    <div class="container-xl">
+        <h1>Encuesta Dojo</h1>
+                <form class="mt-2" action="/process" method="POST">
+                    <div class="mb-1 row">
+                        <label for="nombre" class="col-form-label col-4">Nombre completo</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="nombre">
+                        </div>
+                    </div>
+                    
+
+                    <div class="mb-1 row">
+                        <label for="ubicación" class="col-form-label col-4">Ubicación del Dojo</label>
+                        <div class="col-8">
+                            <select class="form-select" name="ubicación">
+                                <option selected>Santiago</option>
+                                <option>Valdivia</option>
+                                <option>Viña del mar</option>
+                                <option>Concepción</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-1 row">
+                        <label for="lenguaje" class="col-form-label col-4">Lenguaje favorito</label>
+                        <div class="col-8">
+                            <select class="form-select" name="lenguaje">
+                                <option selected>Python</option>
+                                <option>PHP</option>
+                                <option>Java</option>
+                                <option>C++</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-1 row">
+                        <label for="comentarios" class="col-form-label col-4">Comentarios</label>
+                        <div class="col-8">
+                            <textarea class="form-control" type="text" name="comentarios" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
+                </form>
+    </div>
+</body>
+</html>
